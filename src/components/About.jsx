@@ -1,12 +1,32 @@
 import { motion } from "framer-motion";
 import React from "react";
 import Tilt from "react-parallax-tilt";
-import { SaiKiranResume, SuitPhoto } from "../assets";
+import {
+  SaiKiranResume,
+  SuitPhoto,
+  githubIcon,
+  instagramIcon,
+  linkedinIcon,
+} from "../assets";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { slideIn, textVariant } from "../utils/motion";
 
 const ServiceCard = () => {
+  const handlleInstagramClick = () => {
+    window.open("https://www.instagram.com/saikiranreddy.03/", "_blank");
+  };
+
+  const handleLinkedinClick = () => {
+    window.open(
+      "https://www.linkedin.com/in/sai-kiran-reddy-7272b320a/",
+      "_blank"
+    );
+  };
+  const handleGithubClick = () => {
+    window.open("https://github.com/saikiranreddy201", "_blank");
+  };
+
   return (
     <>
       <div className="flex flex-wrap w-70 m-auto justify-center">
@@ -40,21 +60,48 @@ const ServiceCard = () => {
               className="text-secondary text-[17px] max-w-2xl leading-[32px]"
               variants={slideIn("right", "tween", 0.5, 1)}
             >
-              I'm a skilled Undergrad Student with experience in MERN stack.
-              I'm a quick learner and can collaborate with ease in a Team based
+              I'm a skilled Undergrad Student with experience in MERN stack. I
+              am confident in my abilities and I'm a quick learner. I am
+              enthusiastic and can collaborate with ease in a Team based
               environment to create efficient, scalable, and user-friendly
               solutions. Let's work together to bring your ideas to life!
             </motion.p>
           </div>
           <div className="mt-6 flex items-start justify-start">
-            <motion.div
-              variants={slideIn("right", "tween", 1, 1)}
-            >
+            <motion.div variants={slideIn("right", "tween", 1, 1)}>
               <button className="bg-buttonColor rounded-md py-2.5 px-6 outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-buttonHoverColor hover:rounded-md">
                 <a href={SaiKiranResume} download>
                   Download Resume
                 </a>
               </button>
+            </motion.div>
+            <motion.div variants={slideIn("right", "tween", 1, 1)}>
+              <div className="flex-row flex ml-9">
+                <div className="flex">
+                  <img
+                    onClick={handleLinkedinClick}
+                    src={linkedinIcon}
+                    alt="logo"
+                    className="w-7 h-7 mt-1.5 object-contain ml-4 cursor-pointer"
+                  />
+                </div>
+                <div className="flex">
+                  <img
+                    onClick={handleGithubClick}
+                    src={githubIcon}
+                    alt="logo"
+                    className="w-8 h-8 mt-1 object-contain ml-4 cursor-pointer"
+                  />
+                </div>
+                <div className="flex">
+                  <img
+                    onClick={handlleInstagramClick}
+                    src={instagramIcon}
+                    alt="logo"
+                    className="w-9 h-9 mt-1 object-contain ml-4 cursor-pointer"
+                  />
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>
@@ -63,7 +110,6 @@ const ServiceCard = () => {
   );
 };
 
-
 const About = () => {
   return (
     <>
@@ -71,7 +117,7 @@ const About = () => {
         <p className={`${styles.sectionSubText} text-center`}>Introduction</p>
         <h2 className={`${styles.sectionHeadText} text-center`}>Overview.</h2>
       </motion.div>
-      
+
       <ServiceCard />
     </>
   );

@@ -10,7 +10,6 @@ import {
   StarsCanvas,
   Tech,
   Works,
-  FloatingButton
 } from "./components";
 // import { FloatingButton } from "./components/FloatingButton.jsx";
 
@@ -41,7 +40,6 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
-        <FloatingButton/>
       </div>
     </BrowserRouter>
   );
