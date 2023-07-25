@@ -57,7 +57,7 @@ const ServiceCard = () => {
         <div className="ml-12 flex flex-col justify-center">
           <div className="flex">
             <motion.p
-              className="text-secondary text-[17px] max-w-2xl leading-[32px]"
+              className="text-secondary text-justify text-[17px] max-w-2xl leading-[32px]"
               variants={slideIn("right", "tween", 0.5, 1)}
             >
               I'm a skilled Undergrad Student with experience in MERN stack. I
@@ -67,16 +67,16 @@ const ServiceCard = () => {
               solutions. Let's work together to bring your ideas to life!
             </motion.p>
           </div>
-          <div className="mt-6 flex items-start justify-start">
-            <motion.div variants={slideIn("right", "tween", 1, 1)}>
+          <div className="mt-6 flex flex-wrap justify-center sm:justify-start">
+            <motion.div className="flex flex-col items-center sm:items-start" variants={slideIn("right", "tween", 1, 1)}>
               <button className="bg-buttonColor rounded-md py-2.5 px-6 outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-buttonHoverColor hover:rounded-md">
                 <a href={SaiKiranResume} download>
                   Download Resume
                 </a>
               </button>
             </motion.div>
-            <motion.div variants={slideIn("right", "tween", 1, 1)}>
-              <div className="flex-row flex ml-9">
+            <motion.div className="flex flex-col items-center ml-8 mt-4 sm:mt-0" variants={slideIn("right", "tween", 1, 1)}>
+              <div className="flex-row flex">
                 <div className="flex">
                   <img
                     onClick={handleLinkedinClick}
