@@ -67,43 +67,45 @@ const ServiceCard = () => {
               solutions. Let's work together to bring your ideas to life!
             </motion.p>
           </div>
-          <div className="mt-6 flex flex-wrap justify-center sm:justify-start">
-            <motion.div className="flex flex-col items-center sm:items-start" variants={slideIn("right", "tween", 1, 1)}>
-              <button className="bg-buttonColor rounded-md py-2.5 px-6 outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-buttonHoverColor hover:rounded-md">
-                <a href={SaiKiranResume} download>
-                  Download Resume
-                </a>
-              </button>
-            </motion.div>
-            <motion.div className="flex flex-col items-center ml-8 mt-4 sm:mt-0" variants={slideIn("right", "tween", 1, 1)}>
-              <div className="flex-row flex">
-                <div className="flex">
-                  <img
-                    onClick={handleLinkedinClick}
-                    src={linkedinIcon}
-                    alt="logo"
-                    className="w-7 h-7 mt-1.5 object-contain ml-4 cursor-pointer"
-                  />
-                </div>
-                <div className="flex">
-                  <img
-                    onClick={handleGithubClick}
-                    src={githubIcon}
-                    alt="logo"
-                    className="w-8 h-8 mt-1 object-contain ml-4 cursor-pointer"
-                  />
-                </div>
-                <div className="flex">
-                  <img
-                    onClick={handlleInstagramClick}
-                    src={instagramIcon}
-                    alt="logo"
-                    className="w-9 h-9 mt-1 object-contain ml-4 cursor-pointer"
-                  />
+          <motion.div variants={slideIn("right", "tween", 1, 1)}>
+            <div className="mt-6 flex flex-wrap justify-center sm:justify-start">
+              <div className="flex flex-col items-center sm:items-start">
+                <button className="bg-buttonColor rounded-md py-2.5 px-6 outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-buttonHoverColor hover:rounded-md">
+                  <a href={SaiKiranResume} download>
+                    Download Resume
+                  </a>
+                </button>
+              </div>
+              <div className="flex flex-col items-center sm:ml-5 mt-6 sm:mt-0">
+                <div className="flex-row flex">
+                  <div className="flex">
+                    <img
+                      onClick={handleLinkedinClick}
+                      src={linkedinIcon}
+                      alt="logo"
+                      className="w-7 h-7 mt-1.5 object-contain ml-4 cursor-pointer"
+                    />
+                  </div>
+                  <div className="flex">
+                    <img
+                      onClick={handleGithubClick}
+                      src={githubIcon}
+                      alt="logo"
+                      className="w-8 h-8 mt-1 object-contain ml-4 cursor-pointer"
+                    />
+                  </div>
+                  <div className="flex">
+                    <img
+                      onClick={handlleInstagramClick}
+                      src={instagramIcon}
+                      alt="logo"
+                      className="w-9 h-9 mt-1 object-contain ml-4 cursor-pointer"
+                    />
+                  </div>
                 </div>
               </div>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </>

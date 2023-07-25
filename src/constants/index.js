@@ -131,8 +131,8 @@ import {
       iconBg: "#E6DEDD",
       date: "June 2023 - Aug 2023",
       points: [
-        "Made significant contributions to various repositories by writing code, which included tasks such as identifying and resolving bugs as well as implementing new features.",
-        "I have worked alongside talented contributors, industry experts, and mentors which has proven to be an invaluable and enriching experience.",
+        "I have made significant contributions to various repositories by writing code, which included tasks such as identifying and resolving bugs as well as implementing new features.",
+        "I have worked alongside talented contributors and industry experts and also mentors which has proven to be an invaluable and enriching experience.",
         "My contributions have been recognized by the project maintainers, who have praised the clarity and efficiency of the code I've submitted.",
       ],
     },
