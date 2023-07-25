@@ -43,7 +43,10 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import Myphoto from "./Myphoto.jpg"
 import SuitPhoto from "./SuitPhoto.jpg";
-import SaiKiranResume from "./SaiKiranResume.pdf"
+import SaiKiranResume from "./SaiKiranResume.pdf";
+import moodfood from "./moodfood.png"
+import webcrawler from "./webcrawler.png"
+import todoapp from "./todoapp.png"
 
 
 
@@ -88,5 +91,8 @@ export {
   linkedinIcon,
   Myphoto,
   SuitPhoto,
-  SaiKiranResume
+  SaiKiranResume,
+  moodfood,
+  webcrawler,
+  todoapp
 };

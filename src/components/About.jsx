@@ -40,9 +40,8 @@ const ServiceCard = () => {
               className="text-secondary text-[17px] max-w-2xl leading-[32px]"
               variants={slideIn("right", "tween", 0.5, 1)}
             >
-              I'm a skilled Undergrad Student with experience in Javascript and
-              and strong foundation in frameworks like React.js and Express.js.
-              I'm a quick learner and collaborate closely with Team based
+              I'm a skilled Undergrad Student with experience in MERN stack.
+              I'm a quick learner and can collaborate with ease in a Team based
               environment to create efficient, scalable, and user-friendly
               solutions. Let's work together to bring your ideas to life!
             </motion.p>

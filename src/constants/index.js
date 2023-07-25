@@ -28,7 +28,10 @@ import {
     ssoc,
     java,
     postman,
-    mui
+    mui,
+    moodfood,
+    webcrawler,
+    todoapp
   } from "../assets";
   
   export const navLinks = [
@@ -164,16 +167,16 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Mood Based Food Recommendation",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "An ML model that recommends food to users based on their current mood. Implemented using KNN algorithm and suggests the restaurants in the preferred city based on rating.",
       tags: [
         {
-          name: "react",
+          name: "Flask",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "ML",
           color: "green-text-gradient",
         },
         {
@@ -181,50 +184,46 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: moodfood,
+      source_code_link: "https://github.com/saikiranreddy201/Mood-Based-Restaurant-Recommendation",
     },
     {
-      name: "Job IT",
+      name: "Web Crawler",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "This NodeJs project retrieves and extracts information from web pages making HTTP requests including all the PHP files and HTML files. The web pages having the robots.txt files are secured and these applications cannot be extracted.",
       tags: [
         {
-          name: "react",
+          name: "Nodejs",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "tailwind",
           color: "green-text-gradient",
         },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: webcrawler,
+      source_code_link: "https://github.com/saikiranreddy201/web-crawler",
     },
     {
-      name: "Trip Guide",
+      name: "FullStack To-Do app",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A FullStack To-Do app using MERN stack, where users can interact with a UI and stores their tasks and important dates in MongoDB. Bootstrap is used for styling the UserInterface. User can update and save their To-Do's in the UI itself",
       tags: [
         {
-          name: "nextjs",
+          name: "Reactjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "Expressjs",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "MongoDB",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: todoapp,
+      source_code_link: "https://github.com/saikiranreddy201/Todo-App",
     },
   ];
   
