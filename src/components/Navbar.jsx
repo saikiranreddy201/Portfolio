@@ -29,7 +29,9 @@ const Navbar = () => {
       else if(scrollHeight > contactHeight){
         setScrollActive("Contact");
       }
-      
+      if(setScrollActive != ""){
+        setActive("");
+      }
     }
 
     useEffect(() => {
