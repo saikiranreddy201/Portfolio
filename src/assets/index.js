@@ -47,6 +47,7 @@ import SaiKiranResume from "./SaiKiranResume.pdf";
 import moodfood from "./moodfood.png"
 import webcrawler from "./webcrawler.png"
 import todoapp from "./todoapp.png"
+import mylogo from "./mylogo.png"
 
 
 
@@ -94,5 +95,6 @@ export {
   SaiKiranResume,
   moodfood,
   webcrawler,
-  todoapp
+  todoapp,
+  mylogo
 };
