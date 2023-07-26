@@ -29,7 +29,7 @@ const ServiceCard = () => {
 
   return (
     <>
-      <div className="flex flex-wrap w-70 m-auto justify-center">
+      <div className="flex flex-wrap w-70 m-auto justify-center items-center">
         <Tilt className="xs:w-[250px]">
           <motion.div
             variants={slideIn("left", "tween", 0.5, 1)}
@@ -54,7 +54,7 @@ const ServiceCard = () => {
           </motion.div>
         </Tilt>
 
-        <div className="ml-12 flex flex-col justify-center">
+        <div className="sm:ml-12 flex flex-col justify-center items-center sm:items-start">
           <div className="flex">
             <motion.p
               className="text-secondary text-justify text-[17px] max-w-2xl leading-[32px]"
