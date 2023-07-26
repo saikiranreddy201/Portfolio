@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
@@ -6,6 +6,37 @@ import { styles } from "../styles";
 import { mylogo } from "../assets";
 
 const Navbar = () => {
+
+    const [scrollActive, setScrollActive] = useState("");
+
+
+    const listenToScroll = () => {
+      let aboutHeight = 550;
+      let workHeight = 1250;
+      let contactHeight = 3800;
+
+      let scrollHeight = document.body.scrollTop || document.documentElement.scrollTop;
+      if(scrollHeight > aboutHeight && scrollHeight < workHeight){
+        setScrollActive("About");
+      }
+      else if(scrollHeight > workHeight  && scrollHeight < contactHeight){
+        setScrollActive("Work");
+      }
+      else if(scrollHeight > contactHeight){
+        setScrollActive("Contact");
+      }
+      console.log("scrollActive::", scrollActive);
+      console.log("scrollHeight::", scrollHeight);
+    }
+
+    useEffect(() => {
+      window.addEventListener("scroll", listenToScroll);
+      return () => window.removeEventListener("scroll", listenToScroll);
+    },[])
+
+
+
+
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   return (
@@ -32,7 +63,7 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-white" : "text-secondary"
+                active === nav.title || scrollActive === nav.title ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
@@ -56,7 +87,7 @@ const Navbar = () => {
             <li
               key={link.id}
               className={`${
-                active === link.title ? "text-white" : "text-secondary"
+                active === link.title || scrollActive === link.title ? "text-white" : "text-secondary"
               } font-poppins font-medium cursor-pointer text-[16px]`}
               onClick={() => {
                 setToggle(!toggle)
