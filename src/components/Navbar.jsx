@@ -14,8 +14,12 @@ const Navbar = () => {
       let aboutHeight = 550;
       let workHeight = 1250;
       let contactHeight = 3800;
+      
 
       let scrollHeight = document.body.scrollTop || document.documentElement.scrollTop;
+      if(scrollHeight < aboutHeight){
+        setScrollActive("");
+      }
       if(scrollHeight > aboutHeight && scrollHeight < workHeight){
         setScrollActive("About");
       }
@@ -25,8 +29,7 @@ const Navbar = () => {
       else if(scrollHeight > contactHeight){
         setScrollActive("Contact");
       }
-      console.log("scrollActive::", scrollActive);
-      console.log("scrollHeight::", scrollHeight);
+      
     }
 
     useEffect(() => {
