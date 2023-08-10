@@ -58,7 +58,7 @@ const ServiceCard = () => {
           <div className="flex">
             <motion.p
               className="text-secondary text-justify text-[17px] max-w-2xl leading-[32px]"
-              variants={slideIn("right", "tween", 0.5, 1)}
+              variants={slideIn("down", "tween", 0.5, 1)}
             >
               I'm a skilled Undergrad Student with experience in MERN stack. I
               am confident in my abilities and I'm a quick learner. I am
@@ -67,7 +67,7 @@ const ServiceCard = () => {
               solutions. Let's work together to bring your ideas to life!
             </motion.p>
           </div>
-          <motion.div variants={slideIn("right", "tween", 1, 1)}>
+          <motion.div variants={slideIn("down", "tween", 0.5, 1)}>
             <div className="mt-6 flex flex-wrap justify-center sm:justify-start">
               <div className="flex flex-col items-center sm:items-start">
                 <button className="bg-buttonColor rounded-md py-2.5 px-6 outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-buttonHoverColor hover:rounded-md">
