@@ -37,6 +37,7 @@ import tesla from "./company/tesla.png";
 import gssoc from "./company/gssoc.png";
 import ssoc from "./company/ssoc.jpg";
 import zyxan from "./company/zyxan.png";
+import verisk from "./company/verisk.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -96,5 +97,6 @@ export {
   moodfood,
   webcrawler,
   todoapp,
-  mylogo
+  mylogo,
+  verisk
 };

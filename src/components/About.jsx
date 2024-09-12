@@ -19,7 +19,7 @@ const ServiceCard = () => {
 
   const handleLinkedinClick = () => {
     window.open(
-      "https://www.linkedin.com/in/sai-kiran-reddy-7272b320a/",
+      "https://www.linkedin.com/in/saikiranreddy201",
       "_blank"
     );
   };
@@ -60,11 +60,7 @@ const ServiceCard = () => {
               className="text-secondary text-justify text-[17px] max-w-2xl leading-[32px]"
               variants={slideIn("down", "tween", 0.5, 1)}
             >
-              I'm a skilled Undergrad Student with experience in MERN stack. I
-              am confident in my abilities and I'm a quick learner. I am
-              enthusiastic and can collaborate with ease in a Team based
-              environment to create efficient, scalable, and user-friendly
-              solutions. Let's work together to bring your ideas to life!
+              A software Engineer who recently completed his under graduation with a degree in Information Technology from GRIET. Currently working as a Software Engineer at Verisk Analytic, responsible for developing software and programs for use in the organization. Developed applications using MERN stack, tested and deployed myself. Also having good working knowledge in Automation using Selenium c# and developed Rest API's. Also I have a good foundation on DSA and core CS fundamentals.
             </motion.p>
           </div>
           <motion.div variants={slideIn("down", "tween", 0.5, 1)}>

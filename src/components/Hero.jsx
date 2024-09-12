@@ -16,16 +16,23 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#915EFF]">Sai Kiran Reddy</span>
           </h1>
+          <p className={`${styles.heroDownTest} text-yellow-300`}>
+            (Unraveling the Secrets of Engineering💡)
+          </p>
           <p className={`${styles.heroSubText} text-white-100`}>
-            I am a prefinal year undergrad student, who is{" "}
+            A results-driven, customer-focused, articulate and analytical
+            Software Engineer
             <br className="sm:block hidden" />
-            passionate about Software Development and{" "}
-            <br className="sm:block hidden" /> developing Web Interfaces.
+            who can think out of the box. Strong in MERN stack,Building API's,
+            Automation Testing,
+            <br className="sm:block hidden" />
+            Integration & problem-solving skills with DSA and core CS
+            fundamentals.
           </p>
         </div>
       </div>
 
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
     </section>
   );
 };
