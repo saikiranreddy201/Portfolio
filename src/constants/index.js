@@ -103,8 +103,8 @@ const experiences = [
     title: "Software Development Engineer in Test",
     company_name: "Verisk Analytics",
     icon: verisk,
-    iconBg: "#383E56",
-    date: "Aug 2022 - Jan 2023",
+    iconBg: "#f0f7f7",
+    date: "Jul 2023 - Current",
     points: [
       "Developed and tested various features of products of Verisk, including functional acceptance and regressions.",
       "Managed User Details and Implemented Rest APIs in Nodejs and implemented the UI in React and Redux.",
